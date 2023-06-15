@@ -25,7 +25,7 @@ export const ExpenseForm = ({onSaveExpenseData, stopEditingHandler}) => {
 
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: Number(enteredAmount),
             date: new Date(enteredDate),
         };
 
